@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+host: https://bloomsbury.ai
+note: >-
+  bloomsbury.ai now serves only a termination/tombstone page (Bloomsbury AI was
+  acquired by Facebook in 2018). No .well-known discovery documents are
+  published. Absence recorded as valid data.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

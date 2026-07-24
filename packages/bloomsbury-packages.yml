@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bloomsburyai
+note: >-
+  Bloomsbury AI was acquired by Facebook in 2018 and the hosted Cape API is
+  terminated. Its client libraries were open sourced under the bloomsburyai
+  GitHub org and are not published to a public package registry (PyPI 404 for
+  cape-webservices / cape-document-qa / cape-machine-reader). Recorded from
+  source as first-party, archival.
+packages:
+  - language: python
+    registry: github
+    name: cape-client
+    url: https://github.com/bloomsburyai/cape-client
+    docs: http://cape-client.readthedocs.io/
+    install: pip install git+https://github.com/bloomsburyai/cape-client
+    official: true
+    archival: true
+    description: >-
+      Python client for the Cape API (question answering over document
+      contents). Constructed with an api_base URL; the hosted service is
+      terminated.
+  - language: python
+    registry: github
+    name: cape-webservices
+    url: https://github.com/bloomsburyai/cape-webservices
+    install: pip install git+https://github.com/bloomsburyai/cape-webservices
+    official: true
+    archival: true
+    description: >-
+      Cape web services — the HTTP API/back-end for Cape document question
+      answering (open sourced by Bloomsbury AI).
