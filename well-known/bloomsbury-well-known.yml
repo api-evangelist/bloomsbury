@@ -1,11 +1,11 @@
 generated: '2026-07-18'
 method: searched
 host: https://bloomsbury.ai
-note: >-
-  bloomsbury.ai now serves only a termination/tombstone page (Bloomsbury AI was
-  acquired by Facebook in 2018). No .well-known discovery documents are
-  published. Absence recorded as valid data.
-documents:
+note: bloomsbury.ai now serves only a termination/tombstone page (Bloomsbury AI was acquired by Facebook
+  in 2018). No .well-known discovery documents are published. Absence recorded as valid data.
+hosts:
+- host: https://bloomsbury.ai
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -16,3 +16,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
